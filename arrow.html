@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <style>
+      .wrapper-dropdown-5 {
+ /* размер и позиция */
+ position: relative;
+ width: 200px;
+ margin: 0 auto;
+ padding: 12px 15px;
+
+ /* стили */
+ background: #fff;
+ border-radius: 5px;
+ box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+ cursor: pointer;
+ outline: none;
+ transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-5:after { /* небольшая стрелка */
+ content: "";
+ width: 0;
+ height: 0;
+ position: absolute;
+ top: 50%;
+ right: 15px;
+ margin-top: -3px;
+ border-width: 6px 6px 0 6px;
+ border-style: solid;
+ border-color: #4cbeff transparent;
+}
+.wrapper-dropdown-5.active {
+ border-radius: 5px 5px 0 0;
+ background: #4cbeff;
+ box-shadow: none;
+ border-bottom: none;
+ color: white;
+}
+
+.wrapper-dropdown-5.active:after {
+ border-color: #82d1ff transparent;
+}
+
+.wrapper-dropdown-5.active .dropdown {
+ border-bottom: 1px solid rgba(0,0,0,0.2);
+ max-height: 400px;
+}
+.mybox {
+      position: relative;
+      display: inline-block;
+      }
+      select {
+      display: inline-block;
+      height: 30px;
+      width: 150px;
+      outline: none;
+      color: #74646e;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 1px 1px 2px #999;
+      background: #eee;
+      }
+      /* Select arrow styling */
+      .mybox .myarrow{
+      width: 23px;
+      height: 28px;
+      position: absolute;
+      display: inline-block;
+      top: 1px;
+      right: 3px;
+      background: url("/uploads/media/default/0001/02/f7b4d3d2ba3fe1d8518e6e63d7740e1e73921abf.png") right / 90% no-repeat #eee;
+      pointer-events: none;
+      }
+   </style>
+   <div class="dropdown-skewblock">
+      <h4 class="skewtext">-20</h4>
+      <span>%</span>
+    </div>
+    <ul class="dropdown">
+      <li>
+        <span class="dropdown-choise1">на год (20%)</span>
+      </li>
+      <li>
+        <span class="dropdown-choise2">на 6 месяцев (10%)</span>
+      </li>
+      <li>
+        <span class="dropdown-choise3">на 1 месяц</span>
+      </li>
+    </ul>
+  </div>
+  <div class="mybox">
+   <span class="myarrow"></span>
+   <div class="dropdown-skewblock">
+      <h4 class="skewtext">-20</h4>
+      <span>%</span>
+    </div>
+   <select>
+     <option>Кофе</option>
+     <option>Чай</option>
+     <option>Вода</option>
+     <option selected>Коктейль</option>
+   </select>
+ </div>
+
+
+</body>
+
+<script>
+   function DropDown(el) {
+    this.dd = el;
+    this.initEvents();
+}
+DropDown.prototype = {
+    initEvents : function() {
+        var obj = this;
+
+        obj.dd.on('click', function(event){
+            $(this).toggleClass('active');
+            event.stopPropagation();
+        });
+    }
+}
+</script>
+</html>
