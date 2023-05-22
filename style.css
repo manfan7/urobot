@@ -1296,6 +1296,10 @@ margin-left: 2px;
     width: calc(var(--index)*46);
     margin: 0 auto;
 }
+.item__li-dropdown-choise, .item-title_btn {
+   width: calc(var(--index)*30.3);
+   margin: 0 auto;
+}
 }
 
 
@@ -1318,7 +1322,7 @@ margin-left: 2px;
 }
 
 
-@media (max-width: 285px) {
+@media (max-width: 280px) {
 .item-title_desc-text {
     width: calc(var(--index)*47);
 }
