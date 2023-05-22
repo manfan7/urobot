@@ -1415,3 +1415,13 @@ margin-left: 2px;
     margin-bottom: 10px;
 }
  }
+
+@media (min-width: 1280px) and (max-width: 1441px) {
+   .item__li-dropdown-choise {
+      width: 38vw;
+  }
+  .item-title_btn {
+   width: 38vw;
+}
+
+ }
