@@ -892,6 +892,21 @@ align-items: center;
             top: 3456px;
          }
       }
+ @media (max-width: 1710px) {
+         .item__li-dropdown-choise {
+            padding-left: 4px;
+         }
+         .item__li-select-wrapper {
+             margin-left: 21px;
+}
+@media (max-width: 1620px) {
+         .item__li-dropdown-choise {
+            padding-left: 4px;
+         }
+         .item__li-select-wrapper {
+             margin-left: 21px;
+}
+      }
       @media (max-width: 1501px) {
          .section-descripton-rightside {
             left: 983px;
@@ -1009,13 +1024,32 @@ align-items: center;
          .container__image {
             width: 465px;}
             .section-descripton-rightside {
-               left: 815px;
+               left: 892px;
                top: 4934px;
             }
             .item-title-down {
                margin: 0 auto;
             }
       }
+
+
+@media (max-width: 1428px)
+.item-title_desc-text {
+    width: calc(var(--index)*26);
+    text-align: center;
+}
+ @media (max-width: 1361px) {
+         .section-descripton-rightside {
+    left: 883px;
+    top: 5005px;
+}
+            }
+           
+.item-title-down {
+               margin: 0 auto;
+            }
+      }
+
       @media (max-width: 1205px) { 
      .item__li-dropdown-choise, .item-title_btn  {
        width: calc(var(--index)*19.3);}
@@ -1091,7 +1125,7 @@ align-items: center;
       }
       @media (max-width: 1100px) { 
          .item-title_desc-text {
-            width: calc(var(--index)*36);
+            width: calc(var(--index)*52);
             font-size: 27px;
            
             text-align: center;
@@ -1114,7 +1148,7 @@ align-items: center;
 
       @media (max-width: 925px) { 
          .item__li-select-wrapper, .item__li-select-wrapper1 {
-            margin-left: -6px;
+            margin-left: 0;
         }
         .item__li-year__article {
          font-size: 20px;
@@ -1122,7 +1156,7 @@ align-items: center;
          left: 10px;
      }
      .item-title_desc-text {
-      width: calc(var(--index)*31);
+      width: calc(var(--index)*40);
   }
       }
       @media (max-width: 925px) { 
@@ -1159,6 +1193,11 @@ align-items: center;
      
       margin-right: 5px;
      }
+      }
+@media (max-width: 768px) { 
+        .item-title_desc-text {
+    width: calc(var(--index)*32);
+}
       }
       @media (max-width: 725px) { 
          .item__li-year__article {
