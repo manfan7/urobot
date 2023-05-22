@@ -1251,7 +1251,7 @@ line-height: 29px;
 
 }
 
-@media (max-width: 412px) { 
+@media (max-width: 414px) { 
         .item-title-text {
     font-size: 43px;
       }
