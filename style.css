@@ -886,6 +886,18 @@ align-items: center;
          top: 0;
          background: radial-gradient(59.68% 59.7% at 50% 50%, rgba(0, 10, 47, 0) 0%, #000A2F 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
       }
+      @media (min-width: 1500px) {
+         .item-title_btn {
+            width: calc(var(--index)*10.3);
+            margin: 0 auto;
+            margin-bottom: 20px;
+         }
+         .item__li-dropdown-choise {
+            width: calc(var(--index)*10.3);
+         }
+      }
+         
+      
       @media (max-width: 1756px) {
          .section-descripton-rightside {
             left: 1073px;
