@@ -1631,8 +1631,8 @@ margin-left: 2px;
   }
   .arrow_example {
    top: -19px;
-   width: 12px;
-   height: 12px;
+   width: 23px;
+   height: 23px;
 }
 .item-title-text {
    font-size: 33px;
@@ -1754,7 +1754,7 @@ margin-right: 0;
    font-size: 30px;
 }
 .arrow_example {
-   top: -23px;
+   top: -20px;
 }
 }
 
