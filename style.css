@@ -895,6 +895,9 @@ align-items: center;
          .item__li-dropdown-choise {
             width: calc(var(--index)*10.3);
          }
+         .item__li-select-wrapper, .item__li-select-wrapper1 {
+            right: -79%;
+         }
       }
          
       
