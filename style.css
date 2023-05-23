@@ -263,7 +263,7 @@ transform: scale(1.1);
     margin-left: 16px;
     width: 26px;
     height: 13px;
-    bottom: 6px;
+    bottom: 10px;
      }
 .arrow {
 width: 23px;
@@ -346,13 +346,9 @@ width: 23px;
    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
    z-index: -1;
 }
-.open .arrow-4-left:after {
+.open .arrow {
    transform-origin: center center;
    transform: rotate(-70deg);
-}
-.open .arrow-4-right:after {
-   transform-origin: center center;
-   transform: rotate(-102deg);
 }
 .open1 .arrow_example {
     width: 23px;
