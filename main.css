@@ -995,7 +995,7 @@ body {
 }
 body {
   position: relative;
-  min-width: 506px;
+  min-width: 300px;
   overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(0 8 47 / var(--tw-bg-opacity));
