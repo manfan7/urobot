@@ -264,6 +264,16 @@ transform: scale(1.1);
     width: 26px;
     height: 13px;
      }
+.arrow {
+width: 23px;
+    height: 23px;
+    border-top: 6px solid #FF803A;
+    border-right: 6px solid #FF803A;
+    border-radius: 7px;
+    margin-right: 42px;
+    transform: rotate(135deg);
+}
+
      .arrow_example {
           
             width: 23px;
