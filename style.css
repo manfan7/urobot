@@ -266,17 +266,17 @@ transform: scale(1.1);
      }
      .arrow_example {
           
-            width: 15px;
+            width: 23px;
 
-            height: 15px;
+            height: 23px;
             
-            border-top: 2px solid #000000 !important;
+            /*border-top: 2px solid #000000 !important;
             
-            border-right: 2px solid #000000 !important;
+            border-right: 2px solid #000000 !important;*/
             
             margin: 16px 0 0 10px;
             
-            transform: rotate(135deg);
+            /*transform: rotate(135deg);*/
             
             display: inline-block;
             position: absolute;
@@ -344,12 +344,12 @@ transform: scale(1.1);
    transform: rotate(-102deg);
 }
 .open1 .arrow_example {
-    width: 15px;
-       height: 15px;
-       border-top: 2px solid #000000 !important;
+    width: 23px;
+       height: 23px;
+       /*border-top: 2px solid #000000 !important;
             border-right: 2px solid #000000 !important;
-            margin: 16px 0 0 10px;
-            transform: rotate(-45deg);
+            /*margin: 16px 0 0 10px;*/
+            transform: rotate(-180deg);
             display: inline-block;
             transition: .4s;
 }
@@ -1303,14 +1303,14 @@ align-items: center;
    margin-bottom: 20px;
 }
 .arrow_example {
-   top: -25px;
-   width: 17px;
-   height: 17px;
+   top: -24px;
+   width: 23px;
+   height: 23px;
 }
 .open1 .arrow_example {
-   width: 22px;
-   height: 22px;
-   top: -12px;
+   width: 23px;
+   height: 23px;
+   top: -23px;
 }
 .item__li-select-wrapper, .item__li-select-wrapper1 {
       margin-left: 4px;
@@ -1414,7 +1414,7 @@ padding-top:30px;
 
       @media (max-width: 925px) { 
          .item__li-select-wrapper, .item__li-select-wrapper1 {
-            margin-left: 0;
+            margin-left: 5px;
         }
         .item__li-year__article {
          font-size: 20px;
@@ -1430,13 +1430,13 @@ padding-top:30px;
             font-size: 18px;}
             .arrow_example {
                top: -22px;
-               width: 16px;
-               height: 16px;
+               width: 23px;
+               height: 23px;
            }
            .open1 .arrow_example {
-            width: 15px;
-            height: 15px;
-            top: -10px;
+            width: 23px;
+            height: 23px;
+            top: -21px;
         }
       }
       @media (max-width: 925px) { 
@@ -1535,8 +1535,8 @@ line-height: 29px;
    font-size: 13px;
 }
 .arrow_example {
-   top: -25px;
-   width: 17px;
+   top: -21px;
+   width: 23px;
    height: 17px;
 }
 .item-title-text {
