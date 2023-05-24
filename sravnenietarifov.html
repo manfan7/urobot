@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=\], initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Сравнение тарифов</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="style.css" />
@@ -14,128 +17,347 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="tarif-background"></div>
     <div class="wrapper">
-      <div class="tarif-background"></div>
-      <div class="wrapper-content">
-        <div class="wrapper-title">
-          <div class="wrapper-title__container">
-            <h1>Подробное сраннение тарифов размещения в облаке</h1>
+      <div class="container">
+        <div class="wrapper-content">
+          <div class="wrapper-title">
+            <div class="wrapper-title__container">
+              <h1>Подробное сраннение тарифов размещения в облаке</h1>
+            </div>
           </div>
         </div>
+        <main class="main-info">
+          <div class="main-info_header">
+            <div class="main-info_header-leftside">
+              <div class="leftside__container">
+                <h2 class="title-leftside">Возможности тарифов</h2>
+              </div>
+            </div>
+            <div class="main-info_header-rightside">
+              <div class="rightside-content_item">
+                <h4 class="rightside-content_left item_content_item">
+                  Все возможности
+                </h4>
+              </div>
+              <div class="rightside-content_item">
+                <div class="toggle-centr">
+                  <label class="checkbox" for="checkbox">
+                    <input
+                      class="checkbox__inp"
+                      type="checkbox"
+                      id="checkbox"
+                    />
+                    <span class="checkbox__inner"> </span>
+                  </label>
+                </div>
+              </div>
+              <div class="rightside-content_item">
+                <h4 class="rightside-content_right item_content_item">
+                  показать различия
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="main-info_titleoptions">
+            <div class="main-info_titleoptions__item big__item blau">
+              <h3 class="option__descr">Наименование функций</h3>
+            </div>
+            <div class="main-info_titleoptions__item grun">
+              <h3 class="option__descr">Бесплатный</h3>
+            </div>
+            <div class="main-info_titleoptions__item litegrun">
+              <h3 class="option__descr">Базовый</h3>
+            </div>
+            <div class="main-info_titleoptions__item liteblau">
+              <h3 class="option__descr">Стандартный</h3>
+            </div>
+            <div class="main-info_titleoptions__item strongblau">
+              <h3 class="option__descr">Професcиональный</h3>
+            </div>
+          </div>
+          <div class="main-info_optionschoise">
+            <div class="main-info_titleoptions__item choise_item big__item">
+              <h3 class="option__descr option__descr--black big__descr">
+                Пользователи
+              </h3>
+            </div>
+            <div class="main-info_titleoptions__item choise_item">
+              <h3 class="option__descr option__descr--black">неограничено</h3>
+            </div>
+            <div class="main-info_titleoptions__item choise_item">
+              <h3 class="option__descr option__descr--black">неограничено</h3>
+            </div>
+            <div class="main-info_titleoptions__item choise_item">
+              <h3 class="option__descr option__descr--black">неограничено</h3>
+            </div>
+            <div class="main-info_titleoptions__item choise_item">
+              <h3 class="option__descr option__descr--black">неограничено</h3>
+            </div>
+          </div>
+          <div class="main-info_information">
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h3 class="option__descr descr__title big__descr">
+                  Совместная работа
+                </h3>
+                <div class="arrow__vozm">
+                  <img src="downarrow_121316.png" alt="" />
+                </div>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h3 class="option__descr tooltip-class big__descr">
+                  Чаты
+                  <span class="tooltip__img">
+                    <img src="Vector.png" alt="" />
+                  </span>
+                </h3>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h4 class="option__descr-small big__descr small__descr">
+                  Диалоги один на один
+                </h4>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h4 class="option__descr-small big__descr small__descr">
+                  Групповые чаты
+                </h4>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h4 class="option__descr-small big__descr small__descr">
+                  Каналы
+                </h4>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h3 class="option__descr tooltip-class big__descr">
+                  Видеозвонки HD
+                  <span class="tooltip__img">
+                    <img src="Vector.png" alt="" />
+                  </span>
+                </h3>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h4 class="option__descr-small big__descr small__descr">
+                  Демонстрация экрана
+                </h4>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h4 class="option__descr-small big__descr small__descr">
+                  Групповой чат
+                </h4>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h4 class="option__descr-small big__descr small__descr">
+                  Каналы
+                </h4>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorfalse.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h3 class="option__descr tooltip-class big__descr">
+                  Чаты
+                  <span class="tooltip__img">
+                    <img src="Vector.png" alt="" />
+                  </span>
+                </h3>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="blank.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h4 class="option__descr-small big__descr small__descr">
+                  Диалоги один на один
+                </h4>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h4 class="option__descr-small big__descr small__descr">
+                  Групповые чаты
+                </h4>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+            <div class="itemcol">
+              <div class="main-info_titleoptions__item choise_item big__item">
+                <h4 class="option__descr-small big__descr small__descr">
+                  Каналы
+                </h4>
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+              <div class="main-info_titleoptions__item choise_item">
+                <img src="Vectorok.png" alt="" class="value__vozm" />
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
-      <main class="main-info">
-        <div class="main-info_header">
-          <div class="main-info_header-leftside">
-            <div class="leftside__container">
-              <h2 class="title-leftside">Возможности тарифов</h2>
-            </div>
-          </div>
-          <div class="main-info_header-rightside">
-            <div class="rightside-content_item">
-              <h4 class="rightside-content_left item_content_item">
-                Все возможности
-              </h4>
-            </div>
-            <div class="rightside-content_item">
-              <div class="toggle-centr"></div>
-            </div>
-            <div class="rightside-content_item">
-              <h4 class="rightside-content_right item_content_item"></h4>
-            </div>
-          </div>
-        </div>
-        <div class="main-info_titleoptions">
-          <div class="main-info_titleoptions__item big__item"></div>
-          <div class="main-info_titleoptions__item"></div>
-          <div class="main-info_titleoptions__item"></div>
-          <div class="main-info_titleoptions__item"></div>
-          <div class="main-info_titleoptions__item"></div>
-        </div>
-        <div class="main-info_optionschoise">
-          <div class="main-info_titleoptions__item choise_item big__item"></div>
-          <div class="main-info_titleoptions__item choise_item"></div>
-          <div class="main-info_titleoptions__item choise_item"></div>
-          <div class="main-info_titleoptions__item choise_item"></div>
-          <div class="main-info_titleoptions__item choise_item"></div>
-        </div>
-        <div class="main-info_information">
-          <div class="main-info_titleoptions__item big__item">
-            <div class="items__selected-info main__selected-item"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-          </div>
-          <div class="main-info_titleoptions__item">
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-          </div>
-          <div class="main-info_titleoptions__item">
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-          </div>
-          <div class="main-info_titleoptions__item">
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-          </div>
-          <div class="main-info_titleoptions__item">
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-            <div class="items__selected-info"></div>
-          </div>
-        </div>
-      </main>
     </div>
   </body>
 </html>
