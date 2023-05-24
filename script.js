@@ -33,18 +33,50 @@ document.querySelector(".li2").addEventListener("click", function (event) {
   option2.forEach((item) => item.classList.toggle("optionopen"));
   event.target.classList.toggle("openli");
 });
-let skewtext = document.querySelector(".skewtext");
-let skewtextsec = document.querySelector(".skewtext-sec");
-let yearArticle = document.querySelector(".year__article");
+let skewtext1 = document.querySelector(".skewtext1");
+let skewtext2 = document.querySelector(".skewtext2");
+let skewtextsec = document.querySelectorAll(".skewtext-sec");
+let yearArticle1 = document.querySelector(".year__article1");
+let yearArticle2 = document.querySelector(".year__article2");
+let saleSum1 = 20;
+let saleSum2 = 20;
+let dolz1 = document.querySelector(".dolz1");
+let dolzopt1 = document.querySelectorAll(".dolzopt1");
+let dolzs1 = document.querySelector("#dolzs1");
+let dolzs11 = document.querySelector("#dolzs11");
+let datadolz = 12000;
 
-let saleSum;
-
-let dropdownoption = document.querySelectorAll(".dropdownoption");
-dropdownoption.forEach((item) => {
+let itogSum;
+let dropdownoption1 = document.querySelectorAll(".op1");
+let dropdownoption2 = document.querySelectorAll(".op2");
+dropdownoption1.forEach((item) => {
   item.addEventListener("click", function (event) {
     let saleText = event.target.innerHTML;
-    saleSum = +event.target.dataset.sale;
-    alert(saleSum);
+    saleSum1 = +event.target.dataset.sale;
+    yearArticle1.innerHTML = saleText;
+    skewtext1.innerHTML = saleSum1;
+    skewtextsec.forEach((item) => (item.innerHTML = saleSum1));
+    dolzs11.innerHTML = datadolz - (datadolz * saleSum1) / 100;
     // const content = element.innerHTML;
+  });
+});
+dropdownoption2.forEach((item) => {
+  item.addEventListener("click", function (event) {
+    let saleText = event.target.innerHTML;
+    saleSum2 = +event.target.dataset.sale;
+    yearArticle2.innerHTML = saleText;
+    skewtext2.innerHTML = saleSum2;
+    let datadolz = +event.target.dataset.dolz;
+    dolzs11.innerHTML = datadolz - (datadolz * saleSum1) / 100;
+    // const content = element.innerHTML;
+  });
+});
+
+dolzopt1.forEach((item) => {
+  item.addEventListener("click", function (event) {
+    dolz1.innerHTML = event.target.innerHTML;
+    let datadolz = +event.target.dataset.dolz;
+    dolzs1.innerHTML = datadolz;
+    dolzs11.innerHTML = datadolz - (datadolz * saleSum1) / 100;
   });
 });
