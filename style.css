@@ -347,7 +347,7 @@ width: 23px;
    z-index: -1;
 }
 .open {
-transform: rotate(0deg);
+transform: rotate(0deg)!important;
 }
 .open .select-wrapper {
    transform-origin: center center;
