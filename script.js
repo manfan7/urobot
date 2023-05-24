@@ -1,5 +1,5 @@
 $(".select-wrapper").click(function () {
-  $(this).toggleClass("open");
+  $(this).toggleClass("open2");
   $(".dropdownoption").toggleClass("dropdownoptionop");
 });
 $(".item__li-select-wrapper").click(function () {
