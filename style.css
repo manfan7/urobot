@@ -348,7 +348,7 @@ width: 23px;
 }
 .open2 .select-wrapper {
    transform-origin: center center;
-   transform: rotate(0deg);
+   transform: rotate(10deg);
 
 }
 .open1 .arrow_example {
