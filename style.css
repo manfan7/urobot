@@ -347,16 +347,14 @@ width: 23px;
    z-index: -1;
 }
 .open2 .select-wrapper {
-   transform-origin: center center;
-   transform: rotate(10deg);
-   display: inline-block;
-   position: relative;
-   cursor: pointer;
+ position: relative;
+    cursor: pointer;
     margin-right: 17px;
     margin-left: 16px;
     width: 26px;
     height: 13px;
-    bottom: 10px;
+    bottom: -10px;
+    transform: rotate(180deg);
 
 }
 .open1 .arrow_example {
