@@ -264,6 +264,7 @@ transform: scale(1.1);
     width: 26px;
     height: 13px;
     bottom: 10px;
+    transition: .4s;
      }
 .arrow {
 width: 23px;
@@ -346,7 +347,7 @@ width: 23px;
    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
    z-index: -1;
 }
-.open2 .select-wrapper {
+.open2 {
  position: relative;
     cursor: pointer;
     margin-right: 17px;
@@ -355,6 +356,7 @@ width: 23px;
     height: 13px;
     bottom: -10px;
     transform: rotate(180deg)!important;
+    transition: .4s;
 
 }
 .open1 .arrow_example {
