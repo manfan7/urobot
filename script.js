@@ -41,11 +41,23 @@ let yearArticle2 = document.querySelector(".year__article2");
 let saleSum1 = 20;
 let saleSum2 = 20;
 let dolz1 = document.querySelector(".dolz1");
+let dolz2 = document.querySelector(".dolz2");
 let dolzopt1 = document.querySelectorAll(".dolzopt1");
+let dolzopt2 = document.querySelectorAll(".dolzopt2");
+let dolzopt3 = document.querySelectorAll(".dolzopt3");
 let dolzs1 = document.querySelector("#dolzs1");
 let dolzs11 = document.querySelector("#dolzs11");
 let datadolz = 12000;
-
+let datadolz2 = 90000;
+let datadolz3 = 325000;
+let datadolz4 = 650000;
+let dolzs2 = document.querySelector("#dolzs2");
+let dolzs22 = document.querySelector("#dolzs22");
+let dolzs3 = document.querySelector("#dolzs3");
+let dolzs33 = document.querySelector("#dolzs33");
+let dolzs4 = document.querySelector("#dolzs4");
+let dolzs5 = document.querySelector("#dolzs5");
+let dolzs44 = document.querySelector("#dolzs44");
 let itogSum;
 let dropdownoption1 = document.querySelectorAll(".op1");
 let dropdownoption2 = document.querySelectorAll(".op2");
@@ -57,6 +69,11 @@ dropdownoption1.forEach((item) => {
     skewtext1.innerHTML = saleSum1;
     skewtextsec.forEach((item) => (item.innerHTML = saleSum1));
     dolzs11.innerHTML = datadolz - (datadolz * saleSum1) / 100;
+    dolzs2.innerHTML = datadolz2;
+    dolzs22.innerHTML = datadolz2 - (datadolz2 * saleSum1) / 100;
+    dolzs3.innerHTML = datadolz3;
+    dolzs33.innerHTML = datadolz3 - (datadolz3 * saleSum1) / 100;
+
     // const content = element.innerHTML;
   });
 });
@@ -66,9 +83,16 @@ dropdownoption2.forEach((item) => {
     saleSum2 = +event.target.dataset.sale;
     yearArticle2.innerHTML = saleText;
     skewtext2.innerHTML = saleSum2;
-    let datadolz = +event.target.dataset.dolz;
-    dolzs11.innerHTML = datadolz - (datadolz * saleSum1) / 100;
-    // const content = element.innerHTML;
+    dolzs4.innerHTML = datadolz4;
+    dolzs44.innerHTML = datadolz4 - (datadolz4 * saleSum2) / 100;
+    let current = document.querySelector(".selecteditem");
+    if (current) {
+      let dolzCurrent = current.dataset.dolz5;
+      dolzs5.innerHTML =
+        dolzCurrent - (dolzCurrent * saleSum2) / 100 + " ₽ / год";
+    } else {
+      dolzs5.innerHTML = "Индивидуально";
+    }
   });
 });
 
@@ -79,4 +103,25 @@ dolzopt1.forEach((item) => {
     dolzs1.innerHTML = datadolz;
     dolzs11.innerHTML = datadolz - (datadolz * saleSum1) / 100;
   });
+});
+dolzopt2.forEach((item) => {
+  item.addEventListener("click", function (event) {
+    dolz2.innerHTML = event.target.innerHTML;
+    let datadolz2 = +event.target.dataset.dolz2;
+    dolzs2.innerHTML = datadolz2;
+    dolzs22.innerHTML = datadolz2 - (datadolz2 * saleSum1) / 100;
+  });
+});
+dolzopt3.forEach((item) => {
+  item.addEventListener("click", function (event) {
+    dolzopt3.forEach((item) => item.classList.remove("selecteditem"));
+    event.target.classList.add("selecteditem");
+    let datadolz5 = +event.target.dataset.dolz5;
+    dolzs5.innerHTML = datadolz5 - (datadolz5 * saleSum2) / 100 + " ₽ / год";
+  });
+});
+let dolzoptDefault = document.querySelector(".dolzoptdefault");
+dolzoptDefault.addEventListener("click", function () {
+  dolzopt3.forEach((item) => item.classList.remove("selecteditem"));
+  dolzs5.innerHTML = "Индивидуально";
 });
