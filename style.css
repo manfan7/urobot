@@ -846,7 +846,7 @@ z-index: 20;
 .tarif-eneterprise_vozm {
    margin-left: calc(var(--index)*3.2);
    width: 100%;
-   padding-bottom: 18.4vh;
+   padding-bottom: 20.1vh;
    }
    .tarif-enterprice-down {
    width: 97%;
@@ -1059,12 +1059,12 @@ width: 118%;
       }  
       @media (max-width: 1485px) {
          .item-title_desc-text {
-            width: 107%;
+            width: 106%;
         }
         .tarif-eneterprise_vozm2 {
          margin-left: calc(var(--index)*3.2);
          width: 100%;
-         padding-bottom: 7.7vh;
+         padding-bottom: 5.4vh;
      }
         .item__li-dropdown-choise {
          width: calc(var(--index)*11.3);
@@ -1193,7 +1193,7 @@ padding-bottom: 3vh;
    margin-left: 0;
 }
 .tarif-eneterprise_vozm {
-   padding-bottom: calc(var(--index)*14.65); 
+   padding-bottom: 40.1vh; 
 }
 .container__image {
    width: 562px;
