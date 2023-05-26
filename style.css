@@ -796,11 +796,7 @@ z-index: 20;
       width: 100%;
    }
 
-@media (max-width: 1614px) {
-    .item-title_desc-text {
-      width: 106%;
-   }
-}
+
    .darkblue {
       color: #144FAB;
    }
@@ -1036,6 +1032,12 @@ align-items: center;
 width: 118%;
          }
       }
+
+@media (max-width: 1614px) {
+    .item-title_desc-text {
+      width: 103%;
+   }
+}
       @media (max-width: 1531px) {
          .section-descripton-rightside {
             left: 964px;
