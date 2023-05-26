@@ -2032,7 +2032,7 @@ margin-right: 0;
    width: 100%;
    flex-direction: column;
     align-items: center;
-    
+    user-select: none;
     position: relative;
 }
 .item-li-dropdown-container {
@@ -2403,7 +2403,7 @@ margin-bottom: 20px;
    display: flex;
    gap: 1%;
 }
-.conyainer__enter {
+.container__enter {
    display: flex;
    flex-direction: column;
 }
