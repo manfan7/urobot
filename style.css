@@ -2124,6 +2124,25 @@ color: #00082F;
    padding-top: 7px;
    width: 100%;
 }
+.item__li-dropdownoption__liflex:first-child {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.item__li-dropdownoption__liflex:nth-child(2) {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.item__li-dropdownoption__liflex:last-child {
+border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 .option1, .option2 {
    display: none;
 }
