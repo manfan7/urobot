@@ -103,7 +103,7 @@ dropdownoption1.forEach((item) => {
 });
 dropdownoption2.forEach((item) => {
   item.addEventListener("click", function (event) {
-    let saleText = event.target.innerHTML;
+    let saleText = event.target.innerHTML.replace(/\(.*\)*\)/,'');
     saleSum2 = +event.target.dataset.sale;
     dropdownskewsk2.style.display = "flex";
     yearArticle2.innerHTML = saleText;
