@@ -846,7 +846,7 @@ z-index: 20;
 .tarif-eneterprise_vozm {
    margin-left: calc(var(--index)*3.2);
    width: 100%;
-   padding-bottom: 20.1vh;
+   padding-bottom: 18.2vh;
    }
    .tarif-enterprice-down {
    width: 97%;
@@ -868,7 +868,7 @@ z-index: 20;
    .tarif-eneterprise_vozm2 {
       margin-left: calc(var(--index)*3.2);
       width: 100%;
-      padding-bottom: 5vh;
+      padding-bottom: 5.1vh;
       }
       .tarif-enterpice-ch1 {
          display: none;
@@ -1193,7 +1193,7 @@ padding-bottom: 3vh;
    margin-left: 0;
 }
 .tarif-eneterprise_vozm {
-   padding-bottom: 40.1vh; 
+   padding-bottom: 34.1vh; 
 }
 .container__image {
    width: 562px;
@@ -1284,7 +1284,7 @@ padding-bottom: 3vh;
       }
       @media (max-width: 1439px) {
          .tarif-eneterprise_vozm2 {
-            margin-left: calc(var(--index)*3.2);
+            
             width: 100%;
             padding-bottom: 7.7vh;
         }
