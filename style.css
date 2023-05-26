@@ -791,7 +791,9 @@ z-index: 20;
    .bluelightbtn {
       background-color: #1363DE;
    }
-   
+   .item-title_desc-text {
+      width: 107%;
+   }
    .darkblue {
       color: #144FAB;
    }
