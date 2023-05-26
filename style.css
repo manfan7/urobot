@@ -948,7 +948,8 @@ align-items: center;
       background-size: cover;
     }
     .container__imageflex {
-      position:relative
+      position:relative;
+      z-index: -1;
       }
       .container__imageflex::after {
          content: '';
