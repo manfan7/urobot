@@ -2339,7 +2339,7 @@ line-height: 35px;
    .big__item {
       width: 32%;
    }
-.choise__item:last-child {
+.itemcol:last-child {
 padding-bottom: 10vh;
 }
    .option__descr {
