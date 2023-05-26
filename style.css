@@ -1114,6 +1114,7 @@ width: 118%;
 }
     .container__tarif {
       margin-left: 0;
+padding-bottom: 3vh;
     }
     .item-title_desc-text{
       width: calc(var(--index)*24);
