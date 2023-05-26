@@ -457,6 +457,7 @@ letter-spacing: 0.02em;
    margin: 0 auto;
    cursor: pointer;
    transition: .5s;
+   min-height: 57px;
    /* margin-bottom: 20px; */
    }
    .content_night {
@@ -792,8 +793,14 @@ z-index: 20;
       background-color: #1363DE;
    }
    .item-title_desc-text {
-      width: 107%;
+      width: 100%;
    }
+
+@media (max-width: 1614px) {
+    .item-title_desc-text {
+      width: 106%;
+   }
+}
    .darkblue {
       color: #144FAB;
    }
@@ -1050,7 +1057,7 @@ width: 118%;
       }  
       @media (max-width: 1485px) {
          .item-title_desc-text {
-            width: 100%;
+            width: 107%;
         }
         .tarif-eneterprise_vozm2 {
          margin-left: calc(var(--index)*3.2);
@@ -1087,9 +1094,24 @@ width: 118%;
       border-top-right-radius: 20px;
     }
     .item-title_desc-text {
-      width: calc(var(--index)*22);
+      width: 83%;
       text-align: center;
+      margin: 0 auto;
     }
+
+    .item-title_desc {
+    align-items: center;
+    font-size: 18px;
+    width: 282px;
+    width: 100%;
+    color: #00082F;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 21px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    display: flex;
+}
     .container__tarif {
       margin-left: 0;
     }
