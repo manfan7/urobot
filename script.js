@@ -81,7 +81,7 @@ let dropdownskewsk2 = document.querySelector(".sk2");
 let dropdownskewsec = document.querySelectorAll(".dropdown-skewblock-sec");
 dropdownoption1.forEach((item) => {
   item.addEventListener("click", function (event) {
-    let saleText = event.target.innerHTML;
+    let saleText = event.target.innerHTML.replace(/\(.*\)*\)/,'');
     saleSum1 = +event.target.dataset.sale;
     dropdownskew.style.display = "flex";
     dropdownskewsec.forEach((item) => (item.style.display = "flex"));
