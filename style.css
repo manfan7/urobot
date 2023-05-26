@@ -2339,9 +2339,7 @@ line-height: 35px;
    .big__item {
       width: 32%;
    }
-.itemcol:last-child {
-padding-bottom: 10vh;
-}
+
    .option__descr {
       margin: 0;
       font-weight: 700;
