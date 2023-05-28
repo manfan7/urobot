@@ -14,9 +14,9 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"
       defer
     ></script>
-    <script src="script.js" defer></script>
+    <script src="sravn.js" defer></script>
   </head>
-  <body>
+  <body class="body_sravnenie">
     <div class="tarif-background"></div>
     <div class="wrapper">
       <div class="container">
@@ -97,7 +97,10 @@
           </div>
           <div class="main-info_information">
             <div class="itemcol control-item">
-              <div class="main-info_titleoptions__item choise_item big__item">
+              <div
+                class="main-info_titleoptions__item choise_item big__item control_class control_style_class"
+                data-toggle="num-1"
+              >
                 <h3 class="option__descr descr__title big__descr">
                   Совместная работа
                 </h3>
@@ -118,12 +121,15 @@
                 <img src="blank.png" alt="" class="value__vozm" />
               </div>
             </div>
-            <div class="child-item">
+            <div class="child-item" id="num-1">
               <div class="itemcol">
                 <div class="main-info_titleoptions__item choise_item big__item">
                   <h3 class="option__descr tooltip-class big__descr">
                     Чаты
-                    <span class="tooltip__img">
+                    <span
+                      class="tooltip__img"
+                      data-tooltip="Всплывающая подсказка. Текст надо придумать, это тестовый обрзец, что всё работает"
+                    >
                       <img src="Vector.png" alt="" />
                     </span>
                   </h3>
@@ -202,7 +208,10 @@
                 <div class="main-info_titleoptions__item choise_item big__item">
                   <h3 class="option__descr tooltip-class big__descr">
                     Видеозвонки HD
-                    <span class="tooltip__img">
+                    <span
+                      class="tooltip__img"
+                      data-tooltip="Ещё одна подсказка всплывает неспеша, читаеся..."
+                    >
                       <img src="Vector.png" alt="" />
                     </span>
                   </h3>
@@ -281,7 +290,10 @@
                 <div class="main-info_titleoptions__item choise_item big__item">
                   <h3 class="option__descr tooltip-class big__descr">
                     Чаты
-                    <span class="tooltip__img">
+                    <span
+                      class="tooltip__img"
+                      data-tooltip="Текст вставлять надо из админки"
+                    >
                       <img src="Vector.png" alt="" />
                     </span>
                   </h3>
@@ -338,21 +350,31 @@
                 </div>
               </div>
               <div class="itemcol">
-                <div class="main-info_titleoptions__item choise_item big__item">
+                <div
+                  class="main-info_titleoptions__item choise_item big__item paddinglast"
+                >
                   <h4 class="option__descr-small big__descr small__descr">
                     Каналы
                   </h4>
                 </div>
-                <div class="main-info_titleoptions__item choise_item">
+                <div
+                  class="main-info_titleoptions__item choise_item paddinglast"
+                >
                   <img src="Vectorok.png" alt="" class="value__vozm" />
                 </div>
-                <div class="main-info_titleoptions__item choise_item">
+                <div
+                  class="main-info_titleoptions__item choise_item paddinglast"
+                >
                   <img src="Vectorok.png" alt="" class="value__vozm" />
                 </div>
-                <div class="main-info_titleoptions__item choise_item">
+                <div
+                  class="main-info_titleoptions__item choise_item paddinglast"
+                >
                   <img src="Vectorok.png" alt="" class="value__vozm" />
                 </div>
-                <div class="main-info_titleoptions__item choise_item">
+                <div
+                  class="main-info_titleoptions__item choise_item paddinglast"
+                >
                   <img src="Vectorok.png" alt="" class="value__vozm" />
                 </div>
               </div>

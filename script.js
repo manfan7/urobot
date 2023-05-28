@@ -79,10 +79,21 @@ let dropdownoption2 = document.querySelectorAll(".op2");
 let dropdownskew = document.querySelector(".dropdown-skewblock");
 let dropdownskewsk2 = document.querySelector(".sk2");
 let dropdownskewsec = document.querySelectorAll(".dropdown-skewblock-sec");
+let oldPrice = document.querySelectorAll(".old__old");
+let oldPrice2 = document.querySelectorAll(".old__old2");
+
 dropdownoption1.forEach((item) => {
   item.addEventListener("click", function (event) {
-    let saleText = event.target.innerHTML.replace(/\(.*\)*\)/,'');
+    let saleText = event.target.innerHTML.replace(/\(.*\)*\)/, "");
     saleSum1 = +event.target.dataset.sale;
+    oldPrice.forEach((item) => {
+      item.style.display = "block";
+    });
+    if (saleSum1 == 0) {
+      oldPrice.forEach((item) => {
+        item.style.display = "none";
+      });
+    }
     dropdownskew.style.display = "flex";
     dropdownskewsec.forEach((item) => (item.style.display = "flex"));
     yearArticle1.innerHTML = saleText;
@@ -103,8 +114,16 @@ dropdownoption1.forEach((item) => {
 });
 dropdownoption2.forEach((item) => {
   item.addEventListener("click", function (event) {
-    let saleText = event.target.innerHTML.replace(/\(.*\)*\)/,'');
+    let saleText = event.target.innerHTML.replace(/\(.*\)*\)/, "");
     saleSum2 = +event.target.dataset.sale;
+    oldPrice2.forEach((item) => {
+      item.style.display = "block";
+    });
+    if (saleSum2 == 0) {
+      oldPrice2.forEach((item) => {
+        item.style.display = "none";
+      });
+    }
     dropdownskewsk2.style.display = "flex";
     yearArticle2.innerHTML = saleText;
     skewtext2.innerHTML = saleSum2;
